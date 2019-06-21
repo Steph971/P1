@@ -1,0 +1,691 @@
+/* polices */
+@font-face 
+{
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.eot');
+    src: url('../fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/roboto-medium-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-light-webfont.woff') format('woff'),
+         url('../fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* mise en place polices*/
+h1, h2, h3, a
+{
+	font-family: robotomedium, serif;
+}
+p
+{
+	font-family: robotolight, serif;
+}
+body
+{
+    width: 99%;
+}
+#blocpage
+{
+	width: 98%;
+    margin: auto;
+}
+/* entête */
+header
+{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 97%;
+    height: 8vw;
+    background-color: rgba(255,255,255, 0.8);
+    z-index: 10;
+}
+header p
+{
+    width: 50%;
+    height: 51%;
+}
+header img
+{
+    height: 100%;
+    margin-left: 20%;
+}
+/* menu entête */
+nav
+{
+    display: flex;  /*pour centrer le menu verticalement*/
+    justify-content: space-around;
+    width: 50%;
+}
+nav ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 53%;
+}
+nav a
+{
+    text-decoration: none;
+    color: grey;
+}
+nav a:hover
+{
+    border-top: 3px solid  #84c7f4;
+    padding-top: 30px;
+
+}
+/*banniere */
+#banniere
+{
+    padding-top: 9%;
+}
+#blocimage
+{
+    position: relative;
+}
+#blocimage img
+{
+    width: 100%;
+}
+/* dans la banniere */
+#conteneur
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+
+}
+strong
+{
+    color:  #84c7f4;
+}
+#text
+{
+    position: absolute;
+    left: 10%;
+    color: white;
+}
+
+/* bouton infos de la banniere */
+#bouton 
+{
+    text-decoration: none;
+    color: white;
+    background-color: #84c7f4;
+    padding: 7px 7px 7px 7px;
+}
+#flecheg
+{
+    width: 2.5%;
+    height: 13%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0 4vw 4vw 0;
+}
+.fa-chevron-left
+{
+    color: white;
+    margin-top: 54%;
+    margin-left: 25%;
+}
+#fleched
+{
+    width: 2.5%;
+    height: 13%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4vw 0 0 4vw;
+    z-index: 0;
+}
+.fa-chevron-right
+{
+    color: white;
+    margin-left: 42%;
+    margin-top: 54%;
+}
+/* menu service */
+#services 
+{
+    text-align: center;
+}
+/* seperation avec le trait et rond */ 
+.rondtrait
+{
+    display: flex;
+}
+.trait
+{
+    border-bottom: 0.1em solid rgb(212, 212, 212);
+    width: 8%;
+    margin:auto;
+}
+.rondbleu
+{
+    width: 1vw;
+    height: 1vw;
+    background: #84c7f4;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    right: 50%;
+    z-index: 0;
+}
+/* image mac avec avec les services */
+aside
+{
+    display: flex;
+}
+#mainfeat
+{
+    margin: auto;
+    width: 100%;
+}
+#mainfeat img
+{
+    width: 80%;
+}
+
+#blocservice
+{
+    width: 100%;
+}
+#bloc1, #bloc2, #bloc3
+{
+    display: flex; /* pour mettre l'icone et le texte cote a cote*/
+    align-items: center; /* centré verticalement*/
+}
+/* les icones */
+.cercle /*cercle de l'icone*/
+{
+    border:2px solid rgb(212, 212, 212);
+    border-radius: 50%;  
+    width: 69px;
+    height: 60px;
+    position: relative;
+    z-index: 0;
+}
+  
+.fa-circle /*petit rond de l'icone*/
+{
+    position: absolute;
+    left: 85%;
+    bottom: 22px;
+    z-index: 0;
+}
+.elemtext
+{
+    width: 100%;
+    text-align:left;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+
+/* menu projet*/
+#projet
+{
+    text-align: center;
+    background-color: rgb(235,235,235);
+}
+#projet h1
+{
+    padding-top: 2%;
+    margin-top: 0px;
+}
+/* les liens*/
+#liens
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.liensproj a
+{
+    
+    background-color: rgb(212, 212, 212);
+    padding: 10px 10px 13Px 10px;
+    text-decoration: none;
+    color: gray;
+}
+.liensproj a:hover
+{
+    background-color: #84c7f4;
+    border-bottom:  3px solid #507d9b;
+    color: white;
+}
+.triangle
+{
+    width: 0;
+    height: 0;
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid transparent;
+    border-top: 1vw solid #507d9b;   
+    position: relative;
+    top: 13px;
+    left: 36%;
+    opacity: 0;
+    z-index: 0;
+}
+.liensproj:hover .triangle
+{
+    opacity: 1;
+}
+
+/* les images*/
+#images    /*bloc regroupant toutes les images*/
+{
+    padding-top: 30px;
+}
+
+#part1, #part2 /*rajouter*/
+{
+    display: flex;
+}
+
+figure
+{
+    margin: 20px;
+    position: relative;
+}
+
+#images img
+{
+    width: 100%;
+
+}
+figcaption
+{
+    
+    background-color: rgba(24,24,24,0.8);
+    position: relative;
+    bottom: 90px;
+    text-align: left;
+    color: white;
+    padding-left: 15px;
+    opacity: 0;                 
+    transition: opacity .5s;
+    z-index: 0;
+}
+.text
+{
+    position: absolute;
+    bottom: 2px;
+    width: 99%;
+    padding-left: 1%;
+}
+figcaption h2
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 3em;
+}
+figcaption p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+.fa-eye
+{
+    position: absolute;
+    bottom: 4em;
+    right: 5%;
+    border: 3px solid white; 
+    border-radius: 50%;       /* cercle autour de l'icone*/
+    background: #84c7f4;
+    padding: 5px 5px 5px 5px; /*Pour agrandir l'icone*/
+    z-index: 0;
+}
+
+figure:hover .text
+{
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+/* menu nous contacter*/
+footer
+{
+    text-align: center;
+}
+
+#voile
+{
+    background: rgba(78, 148, 241,0.9);
+    position: relative;
+}
+iframe
+{
+    opacity: 0.8;
+    min-height: 35vw;
+    position: relative;
+}
+#formu
+{
+    background-color: rgba(225, 225, 225, 0.6);
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    padding-left: 2%;
+    z-index: 0;
+}
+input
+{
+    margin-bottom: 15px;
+    padding: 5px 0 5px 5px;
+    width: 90%;
+}
+textarea
+{
+    padding: 5px 0 5px 5px;
+    width: 90%;
+}
+.envoi
+{
+    width: 22%;
+    color: white;
+    background-color: #84c7f4;
+    box-shadow: 0px 1px 1px black;
+}
+
+/* media quierie resolu max 900px */
+
+@media all and (min-width: 300px) and (max-width: 900px)
+{
+    #blocpage
+    {
+        width: 97%;
+    }
+/* responsive entête*/
+    header
+    {
+        height: 80px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    header p
+    {
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    header img
+    {
+        height: 100%;
+        margin-left: 0;
+    }
+    nav
+    {
+       width: 100%;
+    }
+    nav a:hover
+    {
+        border: none;
+    }
+    nav li
+    {
+        margin-right: 15px;
+    }
+/* responsive banniere*/
+    #banniere
+    {
+        display: none;
+    }
+/* responsive menu service */
+    #services
+    {
+        margin-top: 120px;
+    }
+    .trait
+    {
+        width: 24%;
+    }
+    .rondbleu
+    {
+        width: 2vw;
+        height: 2vw;
+        position: relative;
+        top: 0;
+        right: 50%;
+    }
+    aside
+    {
+        flex-direction: column;
+    }
+    #mainfeat
+    {
+        width: 100%;
+    }
+    #mainfeat img
+    {
+        width: 65%;
+    }
+    #blocservice
+    {
+        width:100%;
+    }
+    .fa-circle
+    {
+        left: 93%; /*Pour que le rond bleu reste sur le cercle*/
+    }
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        padding-top: 35%;
+    }
+    .elemtext
+    {
+        width: 100%;
+    }
+/* responsive menu projet */
+   #liens
+   {
+        width: 100%;
+   }
+
+    #images
+    {
+        width: 100%;
+    }
+
+    #images img
+    {
+        width: 100%;
+        height: 100%;
+    }   
+    #part1, #part2
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    figure
+    {
+        margin: auto;
+        width: 100%;
+    }
+    
+        .text
+    {
+        margin: auto;
+    }
+    .fa-eye 
+    {
+        bottom: 88%;
+    }
+/* responsive menu contact */ 
+   #voile
+   {
+        height: 600px;
+        background: rgba(78, 148, 241,0.9);
+        position: relative;
+   }
+   #contact
+   {
+        margin-top: 0;
+   }
+   iframe
+    {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    #formu
+    {
+        width: 97%;
+        margin: auto;
+        position: relative;
+        top: 31%;
+        left: 0px;
+    }
+}
+
+/* media quierie resolu entre 901 et 1024px */
+@media all and (min-width: 901px) and (max-width: 1024px)
+{
+    #blocpage
+    {
+        width: 97%;
+    }
+    p, h1, h2, h3
+    {
+        font-size: 1.5vw;
+    }
+    /* entete */
+    header
+    {
+        height: 9vw;
+    }
+    nav ul
+    {
+        width: 64%;
+    }
+    /* service */
+    .rondbleu
+    {
+
+        width: 1vw;
+        height: 1vw;
+        position: relative;
+        top: 0;
+        right: 50%;
+    }
+    .cercle
+    {
+        border: 2px solid rgb(212, 212, 212);
+        border-radius: 50%;
+        width: 7vw;
+        height: 6vw;
+        position: relative;
+        z-index: 0;
+    }
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        padding-top: 25%;
+    }   
+    /* projet */
+    #liens
+    {
+        width: 42%;
+    }
+    #images
+    {
+        display: flex;
+        width: 100%;
+    }
+    #part1, #part2
+    {
+        display: flex;
+        flex-direction: column;
+    }  
+    /* contact */
+    iframe
+    {
+        width: 100%;
+    }
+}
+/* media quierie resolu min 1025px */
+@media all and (min-width: 1025px)
+{
+    #blocpage
+    {
+        width: 97%;
+    }
+    h1
+    {
+        font-size: 1.6vw;
+    }
+    h2
+    {
+        font-size: 1.4vw;
+    }
+
+    p, h3, a
+    {
+        font-size: 1.3vw;
+    }
+    /* service */
+
+    .cercle
+    {
+        border: 0.2vw solid rgb(212, 212, 212);
+        border-radius: 50%;
+        width: 6vw;
+        height: 5vw;
+        position: relative;
+        z-index: 0;
+    }
+   
+    .fa-circle 
+    {
+        position: absolute;
+        left: 87%;
+        bottom: 37%;
+        z-index: 0;
+    }
+    .fa-chart-line, .fa-cubes, .fa-chart-pie
+    {
+        padding-top: 19%;
+    }
+    .elemtext
+    {
+         width: 100%;
+        text-align: left;
+        margin-left: 2%;
+        padding-left: 2%;
+
+    }
+    /* projet */
+    #images
+    {
+        width: 100%;
+        margin: auto;
+    }
+    figure
+    {
+        width: 100%
+    }
+    /* contact */
+    iframe
+    {
+        width: 100%;
+    }
+}
+
